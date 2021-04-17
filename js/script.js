@@ -1,14 +1,3 @@
-// Make a grid square with a dimension of 16x16 (16 rows, 16 columns for each row)
-// Create one div for each row, and inside that div create 16 more divs
-/*
-1. Use document.querySelector() to select the main div
-2. Create a new element divRow using document.createElement()
-3. Use a loop to append divRow to the main div 16 times
-4. Create a new element divColumn using document.CreateElement()
-5. Use two loops, first loop looks for each divRow
-6. The second loop, nested inside the first loop, will append divColumn to divRow 16 times
-*/
-
 // Function that loads a grid with dimensions specified by variable: numberOfRows x numberofColumns
 function loadGrid ()
 {
@@ -38,5 +27,20 @@ function loadGrid ()
     }
 }
 
+// Function that permanently changes colour of column container upon mouse hovering
+function permaHover()
+{
+    const divColumnHover = document.querySelectorAll(`.column-containers`) 
+    
+    for (let i = 0; i < divColumnHover.length; i++)
+    {
+        divColumnHover[i].addEventListener(`mouseenter`, function()
+        {
+            divColumnHover[i].classList.add(`perma-hover`);
+        });
+    }
+}
+
 // Function call
 loadGrid();
+permaHover();
