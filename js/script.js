@@ -22,7 +22,6 @@ function loadGrid ()
     {
         const divRow = document.createElement(`div`);
 
-        divRow.textContent = `testRow`;
         divRow.classList.add(`row-containers`);
 
         div.appendChild(divRow);
@@ -32,7 +31,6 @@ function loadGrid ()
         {
             const divColumn = document.createElement(`div`);
 
-            divColumn.textContent = `testColumn`
             divColumn.classList.add(`column-containers`)
 
             divRow.append(divColumn);
