@@ -10,11 +10,21 @@ header
     margin-top: 100px;
 }
 
-.main-container
+button
 {
+    margin-top: 90px;
+} 
+
+button:hover
+{
+    cursor: pointer;
+}
+
+.main-container
+{   
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .row-containers
@@ -27,7 +37,6 @@ header
 .column-containers
 {
     border: 1px solid black;
-    padding: 10px;
 }
 
 .perma-hover
