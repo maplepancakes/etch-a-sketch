@@ -1,6 +1,15 @@
 body
 {
-    background: linear-gradient(90deg, #03DAC6, #018786)
+    background: url("../images/u4Ocpfn-doodle-wallpaper.jpg");
+}
+
+#front-background
+{
+    background-color: white;
+    height: 100vh;
+    overflow: auto;
+    min-width: 600px;
+    max-width: 600px;
 }
 
 header
@@ -8,6 +17,7 @@ header
     font-family: "Yellowtail", Arial;
     font-size: 100px;
     margin-top: 100px;
+    padding-right: 25px;
 }
 
 button
