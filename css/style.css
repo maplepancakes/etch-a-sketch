@@ -1,8 +1,3 @@
-/*
-Two types of display
-1. For divRow, the display should be flex, with flex-direction set to row
-2. For the main div, the display should be flex, with flex-direction set to column
-*/
 body
 {
     background: linear-gradient(90deg, #03DAC6, #018786)
@@ -33,4 +28,9 @@ header
 {
     border: 1px solid black;
     padding: 10px;
+}
+
+.perma-hover
+{
+    background-color: black;
 }
