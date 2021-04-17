@@ -20,7 +20,7 @@ function loadGrid ()
         {
             const divColumn = document.createElement(`div`);
 
-            divColumn.classList.add(`column-containers`)
+            divColumn.classList.add(`column-containers`);
 
             divRow.append(divColumn);
         }
@@ -30,7 +30,7 @@ function loadGrid ()
 // Function that permanently changes colour of column container upon mouse hovering
 function permaHover()
 {
-    const divColumnHover = document.querySelectorAll(`.column-containers`) 
+    const divColumnHover = document.querySelectorAll(`.column-containers`); 
     
     for (let i = 0; i < divColumnHover.length; i++)
     {
@@ -41,6 +41,23 @@ function permaHover()
     }
 }
 
+// Function that resets grid
+function resetButton()
+{
+    const resetButton = document.querySelector(`button`);
+
+    resetButton.addEventListener(`click`, function()
+    {
+        const divFilledColumns  = document.querySelectorAll(`.perma-hover`);
+    
+        for (let i = 0; i < divFilledColumns.length; i++)
+        {
+            divFilledColumns[i].classList.remove(`perma-hover`);
+        }
+    });
+}
+
 // Function call
 loadGrid();
 permaHover();
+resetButton();
