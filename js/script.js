@@ -3,7 +3,7 @@ let numberOfColumns = 16;
 
 function verifyInput(input)
 {
-    const maxDimension = 50;
+    const maxDimension = 100;
 
         if (input === ``)
         {
@@ -72,7 +72,7 @@ function setPadding(dimension)
 // Function that loads a grid with dimensions specified by variable: numberOfRows x numberofColumns
 function loadGrid ()
 {
-    const div = document.querySelector(`div`);
+    const div = document.querySelector(`.main-container`);
 
     // Retrieves value to set padding for class="column-containers"
     let dimension = calculateDimension();
