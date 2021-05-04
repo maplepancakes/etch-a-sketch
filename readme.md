@@ -1,6 +1,6 @@
 # PROJECT STATUS: Completed
 
-Etch-a-Sketch! Except I have never drawn on this before. Where did my childhood go?
+### Objective: To demonstrate an understanding of DOM manipulation.
 
 Created using HTML, CSS, and JavaScript.
 
